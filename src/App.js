@@ -11,6 +11,7 @@ import Input from "./components/pages/Input";
 import MyHoc from "./components/MyHoc";
 import ToDo from "./components/pages/ToDo";
 import "../src/App.css"
+import New from "./components/pages/New";
 
 export default function App() {
   return (
@@ -36,6 +37,9 @@ export default function App() {
             <li>
               <Link to="/to-do">to do</Link>
             </li>
+            <li>
+              <Link to="/new">New</Link>
+            </li>
 
           </ul>
         </nav>
@@ -60,6 +64,9 @@ export default function App() {
           </Route>
           <Route path="/to-do">
             <ToDo />
+          </Route>
+          <Route path="/new">
+            <New />
           </Route>
 
         </Switch>
