@@ -12,6 +12,7 @@ import MyHoc from "./components/MyHoc";
 import ToDo from "./components/pages/ToDo";
 import "../src/App.css"
 import New from "./components/pages/New";
+import MyState from "./components/MyState";
 
 export default function App() {
   return (
@@ -38,7 +39,7 @@ export default function App() {
               <Link to="/to-do">to do</Link>
             </li>
             <li>
-              <Link to="/new">New</Link>
+              <Link to="/use-state">Use State</Link>
             </li>
 
           </ul>
@@ -65,8 +66,8 @@ export default function App() {
           <Route path="/to-do">
             <ToDo />
           </Route>
-          <Route path="/new">
-            <New />
+          <Route path="/use-state">
+            <MyState />
           </Route>
 
         </Switch>
